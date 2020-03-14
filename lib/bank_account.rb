@@ -1,3 +1,5 @@
+require 'pry'
+
 class BankAccount
   
   attr_accessor :balance, :status 
@@ -11,6 +13,7 @@ def initialize(name, balance, status)
 end
 
 def deposit(amount)
+  binding.pry
   balance += amount
   balance 
 end
