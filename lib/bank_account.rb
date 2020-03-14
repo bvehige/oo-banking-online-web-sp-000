@@ -11,7 +11,9 @@ def initialize(name, balance, status)
 end
 
 def deposit(amount)
-  balance += amount 
+  balance += amount
+  balance 
+end
   
 
 
