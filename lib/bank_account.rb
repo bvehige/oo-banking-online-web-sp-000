@@ -5,21 +5,20 @@ class BankAccount
   attr_accessor :balance, :status 
   attr_reader :name 
 
-def initialize(name, balance, status)
+def initialize(name, balance = 1000, status = "open")
   @name = name
-  balance = 1000
-  status = "open" 
+  @balance = balance
+  @status = status  
 
 end
 
 def deposit(amount)
-  binding.pry
-  balance += amount
-  balance 
+  @balance += amount
+  @balance 
 end
 
 def display_balance
-  puts "Your balance is $#{balance}."
+  puts "Your balance is $#{@balance}."
 end
   
 
