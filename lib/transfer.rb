@@ -23,6 +23,9 @@ def execute_transaction
     @receiver.balance += @amount
     @status = "complete"
   else
+    return 
+    
+    @status - "rejected"
     
   
   
