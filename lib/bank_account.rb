@@ -16,7 +16,7 @@ def deposit(amount)
 end
 
 def display_balance
-  puts 
+  puts "Your balance is $#{balance}."
 end
   
 
