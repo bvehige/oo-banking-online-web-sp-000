@@ -18,6 +18,7 @@ def deposit(amount)
 end
 
 def display_balance
+  binding.pry
   puts "Your balance is $#{@balance}."
 end
   
